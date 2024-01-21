@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BIOBASKET by tech titans</title>
+
+<!--code for font awesome cdn-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--code for font awesome cdn-->
+
+<!--code for linking css file-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--code for linking css file-->
+</head>
+<body>
+<!--header section-->
+<header class="header">
+	<a href="#" class="logo"> <i class="fa fa-shopping-basket"></i> BIOBASKET</a>
+
+<nav class="navbar">
+	<a href="#Home">Home</a>
+	<a href="#Features">Features</a>
+	<a href="#Products">Products</a>
+	<a href="#Categories">Catagories</a>
+	<a href="#Review">Review</a>
+	<a href="#Blogs">Blogs</a>
+</nav>
+
+<div class="icons">
+	<div class="fa fa-bars" id="menu-btn"></div>
+	<div class="fa fa-search" id="search-btn"></div>
+	<div class="fa fa-shopping-cart" id="cart-btn"></div>
+	<div class="fa fa-user" id="login-btn"></div>
+</div>
+
+<form class="search-form">
+    <input type="search" id="search-box" placeholder="search Here....">
+    <label for="search-box" class="fa fa-search"></label>
+</form>
+
+<div class="shopping-cart">
+	<div class="box">
+		<i class="fa fa-trash"></i>
+		<img src="img/Picture3.jpg">
+	    <div class="content">
+			<h3>Pomogranate</h3>
+			<span class="price">₹10.99</span>
+			<span class="quantity">Qty : 1</span>
+		</div>
+	</div>
+	<div class="box">
+		<i class="fa fa-trash"></i>
+		<img src="img/Picture5.jpg">
+	    <div class="content">
+			<h3>watermelon</h3>
+			<span class="price">₹7.99</span>
+			<span class="quantity">Qty : 1</span>
+		</div>
+	</div>
+	<div class="box">
+		<i class="fa fa-trash"></i>
+		<img src="img/Picture11.jpg">
+	    <div class="content">
+			<h3>carrot</h3>
+			<span class="price">₹5.99</span>
+			<span class="quantity">Qty : 1</span>
+		</div>
+	</div>
+<div class="total"> total : ₹24.97/- </div>
+<a href="#" class="btn">Checkout</a>
+
+</div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Include your CSS file if you have one -->
+  <style>
+    .search-form {
+      display: none; /* Initially hide the search form */
+    }
+
+    .search-form.active {
+      display: block; /* Show the search form when it has the 'active' class */
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <form class="search-form">
+    <!-- Your search form content goes here -->
+    <label for="search-input">Search:</label>
+    <input type="text" id="search-input" placeholder="Type here">
+    <button type="submit">Search</button>
+  </form>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let searchForm = document.querySelector('.search-form');
+
+      document.querySelector('#search-btn').onclick = () => {
+        searchForm.classList.toggle('active');
+      };
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+<!-- Example script placement -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let shoppingCart = document.querySelector('.shopping-cart');
+
+    document.querySelector('#cart-btn').onclick = () => {
+      shoppingCart.classList.toggle('active');
+    };
+  });
+</script>
+
+<form action="#" class="login-form">
+	<h3>login now</h3>
+	<input type="email" placeholder="your email" class="box">
+	<input type="email" placeholder="your password" class="box">
+<p>Forgot your password <a href="#"> click Here</a></p>
+<p>dont have an account<a href="#"> Create Now</a></p>
+	<input type="submit" value="Login Now" class="btn">
+</form>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Include your CSS file if you have one -->
+  <style>
+    .login-form {
+      display: none; /* Initially hide the login form */
+    }
+
+    .login-form.active {
+      display: block; /* Show the login form when it has the 'active' class */
+    }
+  </style>
+</head>
+<body>
+
+  
+  <form class="login-form">
+    <!-- Your login form content goes here -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter your username">
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password">
+    <button type="submit">Login</button>
+  </form>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let loginForm = document.querySelector('.login-form');
+
+      document.querySelector('#login-btn').onclick = () => {
+        loginForm.classList.toggle('active');
+      };
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+</header>
+<!--header section-->
+
+
+
+<!--banner section-->
+<section class="home" id= "home">
+<div class="content">
+  <h3>Fresh and <span>Organic</span> Products for you</h3>
+  <p>Everyday is grocery day. You need it, we deliver it. Have your groceries delivered at any time
+   A Shop that has it all! · All you need under one roof </p>
+
+  <a href="a" class="btn">Shop Now</a>
+</div>
+</section>
+
+
+</body>
+</html>
+
+
+<!--banner section-->
+
+<!--our section-->
+<section class="features" id ="features">
+  <h1 class="heading"> our <span>features</span> </h1>
+  <div class ="box-container">
+  <div class="box">
+    <img src="img/Picture20.jpg">
+    <h3>Fresh and organic</h3>
+
+    <p>Quality, Freshness, and Value,reflects our commitment to nourishing your family and community</p>
+
+    <a href="#" class ="btn">Read more</a> 
+  </div>
+  <div class="box">
+    <img src="img/Picture9.jpg">
+    <h3>Quick delivey</h3>
+
+    <p>Delivery partner sets out for delivery Efficient rout tracking</p>
+
+    <a href="#" class ="btn">Read more</a> 
+  </div>
+  <div class="box">
+    <img src="img/Picture12.jpg">
+    <h3>Secured payment </h3>
+
+    <p>Incorporating secure and reliable payment gateways is paramount to building trust in your hyperlocal delivery app</p>
+
+    <a href="#" class ="btn">Read more</a> 
+  </div>
+
+
+
+
+</section>
+
+
+
+<!--our section-->
+
+<!--our product section-->
+<section class="products" id ="products">
+  <h1 class="heading"> our <span>products</span> </h1>
+
+  <div class ="swiper product-slider">
+
+    <div class="swiper-wrapper">
+      <div class="swiper-slide box">
+        <img src="img/p1.jpg">
+        <h1>Fresh tomatos</h1>
+        <div class="price">₹100</div>
+        <div class="starts">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+        </div>
+        <a href=""class="btn">add to cart</a>
+      </div>
+      <div class="swiper-slide box">
+        <img src="img/p2.jpg">
+        <h1>Fresh broccli </h1>
+        <div class="price">₹60</div>
+        <div class="starts">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+        </div>
+        <a href=""class="btn">add to cart</a>
+      </div>
+      <div class="swiper-slide box">
+        <img src="img/p3.jpg">
+        <h1>Fresh potatos</h1>
+        <div class="price">₹150</div>
+        <div class="starts">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+        </div>
+        <a href=""class="btn">add to cart</a>
+      </div>
+      <div class="swiper-slide box">
+        <img src="img/picture40.jpg">
+        <h1>Fresh chillis</h1>
+        <div class="price">₹220</div>
+        <div class="starts">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+        </div>
+        <a href=""class="btn">add to cart</a>
+      </div>
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <div class ="product-slider">
+
+    <div class="wrapper">
+      <div class="swiper-slide box">
+        <img src="img/p1.jpg">
+        <h1>Fresh tomatos</h1>
+        <div class="price">₹100</div>
+        <div class="starts">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+        </div>
+        <a href=""class="btn">add to cart</a>
+      </div>
+      <div class="box">
+        <img src="img/p2.jpg">
+        <h1>Fresh brochli</h1>
+        <div class="price">₹100</div>
+        <div class="starts">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+        </div>
+        <a href=""class="btn">add to cart</a>
+      </div>
+      <div class="swiper-slide box">
+        <img src="img/p3.jpg">
+        <h1>Fresh potatos</h1>
+        <div class="price">₹100</div>
+        <div class="starts">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+        </div>
+        <a href=""class="btn">add to cart</a>
+      </div>
+      <div class="swiper-slide box">
+        <img src="img/picture40.jpg">
+        <h1>Fresh chllis</h1>
+        <div class="price">₹100</div>
+        <div class="starts">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+        </div>
+        <a href=""class="btn">add to cart</a>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+</section>
+
+
+
+
+<!--our product section-->
+
+
+
+
+
+<!--our Categories section-->
+
+<section class="categories"id="categories"> 
+    <h1 class="heading">products<span>categories</span></h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="img/a1.jpg">
+            <h3>vegetables</h3>
+            <p>upto 45% off</p>
+            <a ref="#" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="img/a2.jpg">
+            <h3>meat</h3>
+            <p>upto 55% off</p>
+            <a ref="#" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="img/a3.jpg">
+            <h3>Dairy products</h3>
+            <p>upto 5% off</p>
+            <a ref="#" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="img/a4.jpg">
+            <h3>Fruits</h3>
+            <p>upto 20% off</p>
+            <a ref="#" class="btn">shop now</a>
+        </div>
+
+</div>
+</section>
+<!--our Categories section-->
+
+<!--our review section-->
+<section class="review" id="review">
+  <h1 class="heading"> Coustmer's <span>Review</span> </h1>
+  <div class ="box-container">
+  <div class="box">
+    <img src="img/pic2.jpeg">
+        <p>Customer support is another area where this app excels. I had a minor issue with an order once, and the support team responded promptly and resolved the issue to my satisfaction.</p>
+    <h3>sam</h3>
+    <div class="starts">
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star-half"></i>
+  </div>
+
+
+
+  <div class ="box-container">
+  <div class="box">
+    <img src="img/pic3.jpeg">
+        <p>The delivery service is impeccable. I love the flexibility of choosing a time slot that suits my schedule, and the delivery is always prompt. The packaging is secure, and the produce is fresh, just as if I had picked it out myself at the store.</p>
+    <h3>john</h3>
+    <div class="starts">
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star-half"></i>
+  </div>
+
+
+
+  <div class ="box-container">
+  <div class="box">
+    <img src="img/pic5.jpeg">
+      <p>The variety of payment options also adds to the convenience. Whether I choose to pay online or opt for cash on delivery, the process is smooth and hassle-free.</p>
+      <h3>john</h3>
+      <div class="starts">
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star-half"></i>
+    </div>   
+
+
+
+
+  
+
+
+            
+            
+
+            
+        
+
+</div>
+</section>
+
+
+<!--our review section-->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
